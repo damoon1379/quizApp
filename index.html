@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="category" id="category">
+        <h1>Welcome To Quiz Game!</h1>
+        <h2>What category are you interested in?</h2>
+        <div class="btn-container">
+          <button class="catbtn btn large" value="React">React</button>
+          <button class="catbtn btn large" value="Wordpress">Wordpress</button>
+          <button class="catbtn btn large" value="NodeJs">Node.js</button>
+          <button class="catbtn btn large" value="Postgres">PostgreSQL</button>
+        </div>
+      </div>
+
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+      </div>
+      <div class="controls hide" id="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+        <button class="restart btn hide" id="restart">Restart</button>
+      </div>
+      <div id="grade"></div>
+    </div>
+  </body>
+</html>
